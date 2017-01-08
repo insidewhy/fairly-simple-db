@@ -1,0 +1,40 @@
+{
+  "name": "fairly-simple-db",
+  "version": "0.0.0",
+  "description": "IndexedDB wrapper that performs all IndexedDB access in a web worker",
+  "main": "lib/index.js",
+  "scripts": {
+    "clean": "rimraf lib",
+    "build": "babel src --out-dir lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ohjames/fairly-simple-db.git"
+  },
+  "keywords": [
+    "indexedb",
+    "webworkers"
+  ],
+  "author": "James Pike <github@chilon.net>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ohjames/fairly-simple-db/issues"
+  },
+  "homepage": "https://github.com/ohjames/fairly-simple-db",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.21.0",
+    "babel-plugin-lodash": "^3.2.9",
+    "babel-preset-stage-2": "^6.18.0",
+    "rimraf": "^2.5.4"
+  },
+  "dependencies": {},
+  "babel": {
+    "plugins": [
+      "lodash"
+    ],
+    "presets": [
+      "stage-2"
+    ]
+  }
+}
